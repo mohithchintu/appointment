@@ -1,5 +1,5 @@
 import { AppointmentForm } from '@/components/Appoinment'
-import { Scissors } from 'lucide-react'
+import { Calendar } from 'lucide-react'
 import React from 'react'
 
 const Home: React.FC = () => {
@@ -8,8 +8,8 @@ const Home: React.FC = () => {
             <header className="bg-white shadow-sm">
                 <div className="container mx-auto px-4 py-6">
                     <div className="flex items-center gap-2">
-                        <Scissors className="h-8 w-8 text-primary" />
-                        <h1 className="text-3xl font-bold">Elegant Salon</h1>
+                   <Calendar className="h-8 w-8 text-primary" /> 
+                        <h1 className="text-3xl font-bold">Schedule Your JFSO Appointment</h1>
                     </div>
                 </div>
             </header>

@@ -65,61 +65,14 @@ export function AppointmentForm() {
                             />
                         ))}
                     </div>
-                    <Button
+                    {/* <Button
                         className="w-full"
                         disabled={!form.watch('service')}
                     >
                         Continue
-                    </Button>
+                    </Button> */}
                 </div>
-                <div className="space-y-4">
-                    <h2 className="text-2xl font-bold flex items-center gap-2">
-                        <User className="h-6 w-6" />
-                        Your Details
-                    </h2>
-                    <div className="space-y-4">
-                        <FormField
-                            control={form.control}
-                            name="name"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Name</FormLabel>
-                                    <FormControl>
-                                        <Input placeholder="John Doe" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="email"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Email</FormLabel>
-                                    <FormControl>
-                                        <Input placeholder="john@example.com" type="email" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="phone"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Phone</FormLabel>
-                                    <FormControl>
-                                        <Input placeholder="(123) 456-7890" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                    </div>
-                </div>
-
+                
                 <div className="space-y-4">
                     <h2 className="text-2xl font-bold flex items-center gap-2">
                         <CalendarIcon className="h-6 w-6" />
@@ -184,6 +137,54 @@ export function AppointmentForm() {
                             ))}
                         </div>
                     </div>
+                    <div className="space-y-4">
+                    <h2 className="text-2xl font-bold flex items-center gap-2">
+                        <User className="h-6 w-6" />
+                        Your Details
+                    </h2>
+                    <div className="space-y-4">
+                        <FormField
+                            control={form.control}
+                            name="name"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Name</FormLabel>
+                                    <FormControl>
+                                        <Input placeholder="John Doe" {...field} />
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="email"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Email</FormLabel>
+                                    <FormControl>
+                                        <Input placeholder="john@example.com" type="email" {...field} />
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="phone"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Phone</FormLabel>
+                                    <FormControl>
+                                        <Input placeholder="(123) 456-7890" {...field} />
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                    </div>
+                </div>
+
 
                     <FormField
                         control={form.control}
